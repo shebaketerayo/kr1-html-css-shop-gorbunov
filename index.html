@@ -6,6 +6,7 @@
   <meta name="description" content="Чайный двор — учебный интернет-магазин листового чая: улуны, пуэры, зелёный и ароматизированный чай.">
   <title>Чайный двор — магазин листового чая</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
   <header class="top-bar">
@@ -83,6 +84,9 @@
               <p class="tea-card__text">Прожаренный улун с Уишаньских гор с нотами карамели, ореха и тёмного шоколада.</p>
               <div class="tea-card__footer">
                 <p class="tea-card__price">890&nbsp;₽ / 50&nbsp;г</p>
+                <div class="tea-card__links">
+                  <button class="btn btn--small" type="button" data-order="Да Хун Пао">Заказать</button>
+                </div>
               </div>
             </div>
           </article>
@@ -95,6 +99,9 @@
               <p class="tea-card__text">Выдержанный прессованный пуэр с плотным землистым вкусом и мягкой сладостью.</p>
               <div class="tea-card__footer">
                 <p class="tea-card__price">1 250&nbsp;₽ / 100&nbsp;г</p>
+                <div class="tea-card__links">
+                  <button class="btn btn--small" type="button" data-order="Шу пуэр «Гунтин»">Заказать</button>
+                </div>
               </div>
             </div>
           </article>
@@ -107,6 +114,9 @@
               <p class="tea-card__text">Японский пропаренный зелёный чай с травянистым вкусом и морской свежестью.</p>
               <div class="tea-card__footer">
                 <p class="tea-card__price">760&nbsp;₽ / 50&nbsp;г</p>
+                <div class="tea-card__links">
+                  <button class="btn btn--small" type="button" data-order="Сенча Асамуси">Заказать</button>
+                </div>
               </div>
             </div>
           </article>
@@ -155,5 +165,71 @@
       <p class="page-footer__copy">&copy; 2026 Чайный двор. Все товары и цены вымышлены.</p>
     </div>
   </footer>
+
+  <dialog class="modal" id="order-modal" aria-labelledby="order-modal-title">
+    <div class="modal__head">
+      <h2 class="modal__title" id="order-modal-title">Заявка на чай</h2>
+      <button class="modal__close" type="button" aria-label="Закрыть" data-close>&times;</button>
+    </div>
+
+    <div class="modal__body">
+      <form class="order-form" id="order-form" action="#" method="post" novalidate>
+        <input id="order-tea" name="tea" type="hidden">
+        <p class="order-form__tea">Выбранный чай: <strong id="order-tea-title">не выбран</strong></p>
+
+        <div class="order-form__row">
+          <div class="field">
+            <label class="field__label" for="client-name">Ваше имя</label>
+            <input class="field__input" id="client-name" name="name" type="text" placeholder="Например, Анна" minlength="2" maxlength="40" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="client-phone">Телефон</label>
+            <input class="field__input" id="client-phone" name="phone" type="tel" placeholder="+7 912 345-67-89" pattern="\+7 ?[0-9]{3} ?[0-9]{3}-?[0-9]{2}-?[0-9]{2}" autocomplete="tel" required>
+            <small class="field__hint">Например: +7 912 345-67-89</small>
+          </div>
+        </div>
+
+        <div class="order-form__row">
+          <div class="field">
+            <label class="field__label" for="client-email">E-mail</label>
+            <input class="field__input" id="client-email" name="email" type="email" placeholder="anna@mail.ru" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="client-date">Дата доставки</label>
+            <input class="field__input" id="client-date" name="date" type="date">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="client-topic">Что вас интересует</label>
+          <select class="field__input" id="client-topic" name="topic" required>
+            <option value="">Выберите вариант</option>
+            <option value="buy">Купить чай</option>
+            <option value="gift">Подарочный набор</option>
+            <option value="advice">Помощь с выбором</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="client-comment">Комментарий</label>
+          <textarea class="field__input" id="client-comment" name="comment" rows="3" maxlength="500" placeholder="Пожелания по вкусу, адрес доставки"></textarea>
+        </div>
+
+        <div class="field field--check">
+          <input id="client-agree" name="agree" type="checkbox" required>
+          <label for="client-agree">Согласен(на) на обработку персональных данных</label>
+        </div>
+
+        <div class="order-form__actions">
+          <button class="btn btn--ghost" type="button" data-close>Отмена</button>
+          <button class="btn" type="submit">Отправить заявку</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <p class="toast" id="toast" role="status" hidden>Форма успешно отправлена!</p>
 </body>
 </html>
