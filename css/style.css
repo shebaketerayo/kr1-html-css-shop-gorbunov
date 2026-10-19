@@ -17,3 +17,11 @@ footer {
   background-color: #1f3a2b;
   color: #f6f0e1;
 }
+
+section {
+  max-width: 800px;
+}
+
+h2 {
+  color: #2f5d43;
+}
