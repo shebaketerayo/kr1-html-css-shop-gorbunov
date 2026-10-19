@@ -22,3 +22,7 @@ HTML, CSS, Git, GitHub.
 ## Текущий статус
 
 Создана базовая структура проекта.
+
+## Сайт
+
+GitHub Pages: https://shebaketerayo.github.io/kr1-html-css-shop-gorbunov/
