@@ -1,0 +1,15 @@
+# Служебные файлы Windows и macOS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Настройки редактора
+.vscode/
+.idea/
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+# Зависимости
+node_modules/
