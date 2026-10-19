@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#ecd9bd"/>
+  <circle cx="320" cy="60" r="90" fill="#ffffff" opacity="0.25"/>
+  <ellipse cx="200" cy="268" rx="110" ry="10" fill="#000000" opacity="0.12"/>
+  <path d="M136 70 l8 -10 l8 10 l8 -10 l8 10 l8 -10 l8 10 l8 -10 l8 10 l8 -10 l8 10 l8 -10 l8 10 l8 -10 l8 10 l8 -10 l8 10 v190 h-128 z" fill="#c9a46b"/>
+  <rect x="136" y="70" width="128" height="10" fill="#b38c55"/>
+  <rect x="152" y="112" width="96" height="112" rx="6" fill="#fffdf7"/>
+  <rect x="152" y="112" width="96" height="26" rx="6" fill="#8f3f1f"/>
+  <rect x="152" y="128" width="96" height="10" fill="#8f3f1f"/>
+  <text x="200" y="130" font-family="Georgia, serif" font-size="14" fill="#fffdf7" text-anchor="middle">УЛУН</text>
+  <text x="200" y="170" font-family="Georgia, serif" font-size="13" fill="#2b2b26" text-anchor="middle">Да Хун</text>
+  <text x="200" y="188" font-family="Georgia, serif" font-size="13" fill="#2b2b26" text-anchor="middle">Пао</text>
+  <path d="M184 206 q16 -18 32 0 q-16 14 -32 0 z" fill="#6b4a2b"/>
+  <path d="M184 206 h32" stroke="#fffdf7" stroke-width="1.5"/>
+  <path d="M60 250 q20 -46 64 -50 q-14 40 -64 50 z" fill="#6b4a2b"/>
+  <path d="M290 254 q30 -36 70 -26 q-24 34 -70 26 z" fill="#6b4a2b" opacity="0.8"/>
+  <circle cx="300" cy="240" r="5" fill="#8f3f1f"/>
+  <circle cx="314" cy="250" r="4" fill="#8f3f1f"/>
+  <circle cx="96" cy="256" r="4" fill="#8f3f1f"/>
+</svg>
