@@ -42,6 +42,12 @@ document.querySelectorAll('[data-close]').forEach((button) => {
 });
 
 if (form) {
+  const teaFromLink = new URLSearchParams(window.location.search).get('tea');
+
+  if (teaFromLink) {
+    chooseTea(teaFromLink);
+  }
+
   form.addEventListener('input', (event) => {
     event.target.classList.remove('is-error');
   });

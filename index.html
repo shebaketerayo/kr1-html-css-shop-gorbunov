@@ -16,9 +16,9 @@
       <nav class="menu" aria-label="Главное меню">
         <ul class="menu__list">
           <li><a class="menu__link" href="index.html" aria-current="page">Главная</a></li>
-          <li><a class="menu__link" href="#features">Почему мы</a></li>
-          <li><a class="menu__link" href="#popular">Хиты сезона</a></li>
-          <li><a class="menu__link" href="#contacts">Контакты</a></li>
+          <li><a class="menu__link" href="catalog.html">Каталог</a></li>
+          <li><a class="menu__link" href="order.html">Заявка</a></li>
+          <li><a class="menu__link" href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -35,8 +35,8 @@
             Подскажем, как заварить, и соберём заказ в тот же день.
           </p>
           <div class="intro__actions">
-            <a class="btn" href="#popular">Смотреть хиты</a>
-            <a class="btn btn--ghost" href="#features">Почему мы</a>
+            <a class="btn" href="catalog.html">Открыть каталог</a>
+            <a class="btn btn--ghost" href="order.html">Оставить заявку</a>
           </div>
         </div>
         <img class="intro__image" src="images/teapot.svg" alt="Иллюстрация: глиняный чайник и пиала">
@@ -85,6 +85,7 @@
               <div class="tea-card__footer">
                 <p class="tea-card__price">890&nbsp;₽ / 50&nbsp;г</p>
                 <div class="tea-card__links">
+                  <a class="btn btn--ghost btn--small" href="product-oolong.html">Подробнее</a>
                   <button class="btn btn--small" type="button" data-order="Да Хун Пао">Заказать</button>
                 </div>
               </div>
@@ -100,6 +101,7 @@
               <div class="tea-card__footer">
                 <p class="tea-card__price">1 250&nbsp;₽ / 100&nbsp;г</p>
                 <div class="tea-card__links">
+                  <a class="btn btn--ghost btn--small" href="product-puer.html">Подробнее</a>
                   <button class="btn btn--small" type="button" data-order="Шу пуэр «Гунтин»">Заказать</button>
                 </div>
               </div>
@@ -115,6 +117,7 @@
               <div class="tea-card__footer">
                 <p class="tea-card__price">760&nbsp;₽ / 50&nbsp;г</p>
                 <div class="tea-card__links">
+                  <a class="btn btn--ghost btn--small" href="product-sencha.html">Подробнее</a>
                   <button class="btn btn--small" type="button" data-order="Сенча Асамуси">Заказать</button>
                 </div>
               </div>
@@ -140,7 +143,7 @@
     </section>
   </main>
 
-  <footer class="page-footer" id="contacts">
+  <footer class="page-footer">
     <div class="wrap">
       <div class="page-footer__inner">
         <div>
@@ -149,16 +152,19 @@
           <p class="page-footer__text">Дисциплина «Фронтенд и бэкенд разработка».</p>
         </div>
 
+        <nav aria-label="Разделы сайта">
+          <h2 class="page-footer__title">Разделы</h2>
+          <ul>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="order.html">Заявка</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+
         <div>
           <h2 class="page-footer__title">Связь</h2>
           <p class="page-footer__text"><a href="tel:+74950001234">+7 (495) 000-12-34</a></p>
           <p class="page-footer__text"><a href="mailto:zakaz@chaydvor.example">zakaz@chaydvor.example</a></p>
-        </div>
-
-        <div>
-          <h2 class="page-footer__title">Часы работы</h2>
-          <p class="page-footer__text">Пн–Пт: 10:00–20:00</p>
-          <p class="page-footer__text">Сб–Вс: 11:00–18:00</p>
         </div>
       </div>
 
